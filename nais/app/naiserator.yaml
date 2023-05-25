@@ -22,6 +22,11 @@ spec:
   prometheus:
     enabled: true
     path: /internal/prometheus
+  kafka:
+    pool: {{kafkaPool}}
+  azure:
+    application:
+      enabled: true
   resources:
     limits:
       memory: {{memory}}
